@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AlphaRisk:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="AlphaRisk.war">
+      <element id="artifact" artifact-name="AlphaRisk:war exploded" />
+    </root>
+  </artifact>
+</component>
