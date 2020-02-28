@@ -32,7 +32,7 @@
     <cnet.version>3.3</cnet.version>
     <freemarker.version>2.3.25-incubating</freemarker.version>
     <cxf.version>3.1.4</cxf.version>
-    <shiro.version>1.4.0</shiro.version>
+    <shiro.version>1.4.2</shiro.version>
     <aspectj.version>1.9.2</aspectj.version>
   </properties>
 
