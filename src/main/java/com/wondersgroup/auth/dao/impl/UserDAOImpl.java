@@ -137,7 +137,8 @@ public class UserDAOImpl implements UserDAO{
     @Override
     public int findRowsNoOnCruser(TBDicUser cruser) {
         StringBuffer hql = new StringBuffer("select count(1) from TB_Dic_User where cruser=1");
-        return jdbcTemplate.queryForInt(hql.toString());
+        //return jdbcTemplate.queryForInt(hql.toString());
+        return 0;
     }
 
     //getters and setters

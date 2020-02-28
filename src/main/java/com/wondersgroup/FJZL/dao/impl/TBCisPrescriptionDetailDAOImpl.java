@@ -45,23 +45,24 @@ public class TBCisPrescriptionDetailDAOImpl implements TBCisPrescriptionDetailDA
         calendar.set(Calendar.SECOND, 59);
         final Date endDate = calendar.getTime();
 
-        final StringBuffer hql = new StringBuffer("from TBCisPrescriptionDetail ");
-        hql.append("where kh=? and kfrq between ? and ? ");
-        hql.append("order by kfrq desc,cyh,cfmxh");
-        List<TBCisPrescriptionDetail> tbCisPrescriptionDetail = hibernateTemplate.execute(new HibernateCallback() {
-            @Override
-            public Object doInHibernate(Session session) throws HibernateException {
-                Query query = session.createQuery(hql.toString());
-                query.setString(0, kh);
-                query.setTimestamp(1, startDate);
-                query.setTimestamp(2, endDate);
-                query.setFirstResult(firstRowNum);
-                query.setMaxResults(rowNum);
-                return query.list();
-            }
+        //final StringBuffer hql = new StringBuffer("from TBCisPrescriptionDetail ");
+        //hql.append("where kh=? and kfrq between ? and ? ");
+       // hql.append("order by kfrq desc,cyh,cfmxh");
+        List<TBCisPrescriptionDetail> tbCisPrescriptionDetail = null;
+                //= hibernateTemplate.execute(new HibernateCallback() {
+       //     @Override
+       //     public Object doInHibernate(Session session) throws HibernateException {
+       //         Query query = session.createQuery(hql.toString());
+       //         query.setString(0, kh);
+       //         query.setTimestamp(1, startDate);
+       //         query.setTimestamp(2, endDate);
+       //         query.setFirstResult(firstRowNum);
+       //         query.setMaxResults(rowNum);
+       //         return query.list();
+       //     }
 
-        });
-        System.out.println(tbCisPrescriptionDetail.size());
+        //});
+        //System.out.println(tbCisPrescriptionDetail.size());
         return tbCisPrescriptionDetail;
     }
 

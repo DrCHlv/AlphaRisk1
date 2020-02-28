@@ -24,7 +24,7 @@
 		<property name="locations" value="classpath:database.properties"/>
 	</bean>
 	
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">  
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 	    <property name="driverClassName" value="${driverClassName}" /> 
 	    <property name="url" value="${url}" /> 
 	    <property name="username" value="${username}" /> 

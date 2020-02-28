@@ -23,7 +23,11 @@ public class TBYLMZMedicalRecordServiceImpl implements TBYLMZMedicalRecordServic
         page.setList(tbYLMZMedicalRecordDAO.findMZJZJL(yljgdm, kh, kssj, jssj,
                 page.getPageSize() * (page.getPageNo()-1) - 1, page.getPageSize()));
         //调用DAO,获取满足条件的对象总数
-        page.setTotalRows(tbYLMZMedicalRecordDAO.findRowCount(yljgdm,kh,kssj,jssj));
+        try {
+            page.setTotalRows(tbYLMZMedicalRecordDAO.findRowCount(yljgdm,kh,kssj,jssj));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
         return page;
     }
     public TBYLMZMedicalRecordDAO getTbYLMZMedicalRecordDAO() {
