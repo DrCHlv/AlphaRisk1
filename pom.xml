@@ -29,7 +29,7 @@
     <lang.version>2.4</lang.version>
     <fileupload.version>1.3.1</fileupload.version>
     <codec.version>1.10</codec.version>
-    <cnet.version>3.3</cnet.version>
+    <cnet.version>3.9.0</cnet.version>
     <freemarker.version>2.3.25-incubating</freemarker.version>
     <cxf.version>3.1.4</cxf.version>
     <shiro.version>1.4.0</shiro.version>
